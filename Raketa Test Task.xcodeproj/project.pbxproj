@@ -12,6 +12,10 @@
 		C124BFC924EABA5A00233C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C124BFC724EABA5A00233C28 /* Main.storyboard */; };
 		C124BFCB24EABA5D00233C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C124BFCA24EABA5D00233C28 /* Assets.xcassets */; };
 		C124BFCE24EABA5D00233C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C124BFCC24EABA5D00233C28 /* LaunchScreen.storyboard */; };
+		C124BFD924EABBAC00233C28 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BFD824EABBAC00233C28 /* ApiService.swift */; };
+		C124BFDD24EABE8A00233C28 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BFDC24EABE8A00233C28 /* ApiResult.swift */; };
+		C124BFDE24EABF3000233C28 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BFDA24EABE6A00233C28 /* ApiRequest.swift */; };
+		C124BFE124EACA7E00233C28 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BFE024EACA7E00233C28 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C124BFCA24EABA5D00233C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C124BFCD24EABA5D00233C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C124BFCF24EABA5E00233C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C124BFD824EABBAC00233C28 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		C124BFDA24EABE6A00233C28 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		C124BFDC24EABE8A00233C28 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		C124BFE024EACA7E00233C28 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		C124BFC024EABA5A00233C28 /* Raketa Test Task */ = {
 			isa = PBXGroup;
 			children = (
+				C124BFDF24EACA6C00233C28 /* Models */,
+				C124BFD724EABB9A00233C28 /* Api */,
 				C124BFC124EABA5A00233C28 /* AppDelegate.swift */,
 				C124BFC324EABA5A00233C28 /* SceneDelegate.swift */,
 				C124BFC724EABA5A00233C28 /* Main.storyboard */,
@@ -62,6 +72,24 @@
 				C124BFCF24EABA5E00233C28 /* Info.plist */,
 			);
 			path = "Raketa Test Task";
+			sourceTree = "<group>";
+		};
+		C124BFD724EABB9A00233C28 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C124BFD824EABBAC00233C28 /* ApiService.swift */,
+				C124BFDA24EABE6A00233C28 /* ApiRequest.swift */,
+				C124BFDC24EABE8A00233C28 /* ApiResult.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C124BFDF24EACA6C00233C28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C124BFE024EACA7E00233C28 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +165,10 @@
 			files = (
 				C124BFC224EABA5A00233C28 /* AppDelegate.swift in Sources */,
 				C124BFC424EABA5A00233C28 /* SceneDelegate.swift in Sources */,
+				C124BFDD24EABE8A00233C28 /* ApiResult.swift in Sources */,
+				C124BFE124EACA7E00233C28 /* Post.swift in Sources */,
+				C124BFDE24EABF3000233C28 /* ApiRequest.swift in Sources */,
+				C124BFD924EABBAC00233C28 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
