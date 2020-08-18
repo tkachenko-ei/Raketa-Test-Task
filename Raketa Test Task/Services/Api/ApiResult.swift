@@ -9,10 +9,12 @@
 import Foundation
 
 struct ApiResult<T: Codable>: Decodable {
+    
     var children: [T]?
     var after: String?
     var before: String?
     
+    // MARK: - Codable
     
     enum DataCodingKeys: String, CodingKey {
         case data

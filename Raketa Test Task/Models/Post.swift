@@ -9,11 +9,15 @@
 import Foundation
 
 struct Post: Codable {
+    
     var id: String
     var title: String?
-    var thumbnail: URL?
+    var preview: URL?
     var author: String
+    var commentsCount: Int
     var created: Date
+    
+    // MARK: - Codable
     
     enum DataCodingKeys: String, CodingKey {
         case data
@@ -22,8 +26,9 @@ struct Post: Codable {
     enum CodingKeys: String, CodingKey {
         case id
         case title
-        case thumbnail
+        case preview = "thumbnail"
         case author
+        case commentsCount = "num_comments"
         case created = "created_utc"
     }
     
@@ -33,8 +38,9 @@ struct Post: Codable {
         let container = try dataContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
         id = try container.decode(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
-        thumbnail = try container.decode(URL.self, forKey: .thumbnail)
+        preview = try container.decode(URL.self, forKey: .preview)
         author = try container.decode(String.self, forKey: .author)
+        commentsCount = try container.decode(Int.self, forKey: .commentsCount)
         created = try container.decode(Date.self, forKey: .created)
     }
 }
